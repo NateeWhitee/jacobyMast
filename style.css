@@ -116,6 +116,16 @@ article {
 }
 
 @media screen and (max-width: 1000px) and (min-width: 650px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .container {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
     header h1 {
         width: 100%;
         position: relative;
@@ -133,12 +143,35 @@ article {
 
     header nav ul li {
         width: 100%;
+        background-color: #aaaaaa;
+    }
+
+    article {
+        width: 50%;
+        border-bottom: 1px solid black;
+    }
+
+    aside {
+        width: 50%;
+        border-bottom: 1px solid black;
+    }
+
+    aside img {
+        width: 33%;
+        float: left;
+        margin: 10px;
     }
 }
 
 @media screen and (max-width: 649px) {
     body {
-        background-color: red;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 95%;
+        margin-left: 2.5%;
     }
 
     header h1 {
@@ -158,5 +191,23 @@ article {
 
     header nav ul li {
         width: 100%;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    article img {
+        width: 100%;
+        margin: 0;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+        margin: 0;
     }
 }
