@@ -156,6 +156,8 @@ article {
     header button {
         display: block;
         background-color: #88fd88;
+        outline: 1px solid #333333;
+        outline-offset: -1px;
     }
 
     header button:hover {
@@ -214,6 +216,8 @@ article {
     header button {
         display: block;
         background-color: #88fd88;
+        outline: 1px #333333 solid;
+        outline-offset: -1px;
     }
 
     header button:hover {
