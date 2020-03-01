@@ -2,11 +2,12 @@ body {
     padding: 15px;
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(241, 218, 90, 0.747);
 }
 
 .container {
     width: 80%;
-    margin: 0 0 0 10%;
+    margin: 10px 0 10px 10%;
 }
 
 header {
@@ -24,6 +25,7 @@ header h1 {
     position: absolute;
     background-color: #333333;
     color: #ffffff;
+    float: right;
 }
 
 header button {
@@ -32,14 +34,14 @@ header button {
     padding: 25px 0 25px 0;
     width: 100%;
     border: none;
-    background-color: #333333;
-    color: white;
+    background-color: rgb(136, 253, 136);
     cursor: pointer;
     margin: 0;
 }
 
 header button:hover {
-    background-color: #555555;
+    background-color: rgb(125, 224, 125);
+    opacity: .75;
 }
 
 header nav {
@@ -62,6 +64,7 @@ header nav ul li {
 
 header nav ul li a {
     color: #000000;
+    background-color: rgb(136, 253, 136);
     text-decoration: none;
     display: block;
     text-align: center;
@@ -71,11 +74,12 @@ header nav ul li a {
 }
 
 header nav ul li a:hover:not(.active) {
-    background-color: #cccccc;
+    background-color: rgb(182, 253, 182);
+    transition-duration: .3s;
 }
 
 header nav ul li .active {
-    background-color: #bbbbbb;
+    background-color: rgb(125, 224, 125);
 }
 
 article h1, aside h1 {
@@ -102,17 +106,22 @@ article p, aside p {
 article, aside {
     padding: 0;
     margin: 0;
-    background-color: #eeeeee;
 }
 
 aside {
     float: right;
     width: 25%;
+    background-color: #dddddd;
+    outline: 5px solid rgb(136, 253, 136);
+    outline-offset: -5px;
 }
 
 article {
     float: left;
     width: 75%;
+    background-color: #eeeeee;
+    outline: rgb(136, 253, 136) solid 5px;
+    outline-offset: -5px;
 }
 
 @media screen and (max-width: 1000px) and (min-width: 650px) {
@@ -139,6 +148,7 @@ article {
         width: 100%;
         margin: 0;
         display: none;
+        position: absolute;
     }
 
     header nav ul li {
@@ -187,6 +197,7 @@ article {
         width: 100%;
         margin: 0;
         display: none;
+        position: absolute;
     }
 
     header nav ul li {
