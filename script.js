@@ -32,3 +32,9 @@ function goToSocialPage(socialPage) {
             break;
     }
 }
+
+function closeShowcase() {
+    document.getElementById('showcase').style.position = 'absolute';
+    document.getElementById('showcase').style.left = '-150%';
+    console.log('closeShowcase');
+}
